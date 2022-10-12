@@ -1,0 +1,38 @@
+#amzn{
+    border:2px solid;
+    padding: 2px;
+    background-color: bisque;
+}
+#flpkrt{
+    border: 2px solid;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+#fbk{
+    border: 2px solid;
+    padding: 2px;
+    background-color: bisque;
+}
+#div1{
+    /* border: 2px solid;
+    padding: 2px; */
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: aqua;
+    border: 2px solid;
+    padding: 2px;
+    height: 100%;
+
+}
+#L1{
+    border:2px solid;
+    padding: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: beige;
+    
+}

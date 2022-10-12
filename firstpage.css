@@ -1,0 +1,23 @@
+body{
+   
+    background-image: url("https://www.looper.com/img/gallery/jujutsu-kaisen-season-2-release-date-cast-and-plot-what-we-know-so-far/intro-1619789496.webp");
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     width: fit-content;
+     font-size: 26px;
+    
+     
+}
+#btn1{
+     position: 50% 50%;
+    background-image: linear-gradient(120deg,red,violet,blue);
+     font-size: 20px;
+}
+
+    
+     
+    
+
+
+
