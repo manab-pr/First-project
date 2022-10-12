@@ -28,16 +28,16 @@
         var username = document.getElementById("uName");
         var password = document.getElementById("pwd");
 
-        if (username.value.trim() =="") {
+        if (username.value.trim() == "") {
             alert("you can not leave username blank");
-            document.getElementById("label").style.visibility="visible";
+            document.getElementById("label").style.visibility = "visible";
             return false;
         }
-        else if (password.value.trim() =="") {
+        else if (password.value.trim() == "") {
             alert("you can not leave password blank");
             return false;
         }
-        else if (password.value.length<8) {
+        else if (password.value.length < 8) {
             alert("Password should be of atleast 8");
             return false;
         }
