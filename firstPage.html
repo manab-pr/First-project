@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,18 +10,41 @@
 
 <body>
     <h2>This Website is under making</h2>
-    <form>
-        <label for="uName">Username :</label>
-        <input type="text" placeholder="Username" onmouseover="func() " id="uName" name="uName">
-        <br><br>
-        <label for="uName"> Password: </label>
+    <form onsubmit=" return validate() " action="secondPage.html">
+
+        <input type="text" placeholder="Username" id="uName" name="uName">
+        <br>
         <input type="password" placeholder="Password" id="pwd" name="Password">
+        <label id="label" style="color:Red ;visibility:hidden;">INVALID</label>
+        <br>
+        <button id="btn1" type="submit">SUBMIT</button>
     </form>
     <br>
-    <button id="btn1" type="submit" onclick="window.location='secondPage.html'">SUBMIT</button>
+
 </body>
 <script src="D:\JavaScript_L\Js\jquery.js" type="text/javascript"> </script>
 <script>
+    function validate() {
+        var username = document.getElementById("uName");
+        var password = document.getElementById("pwd");
+
+        if (username.value.trim() =="") {
+            alert("you can not leave username blank");
+            document.getElementById("label").style.visibility="visible";
+            return false;
+        }
+        else if (password.value.trim() =="") {
+            alert("you can not leave password blank");
+            return false;
+        }
+        else if (password.value.length<8) {
+            alert("Password should be of atleast 8");
+            return false;
+        }
+        else {
+            true;
+        }
+    }
 
 
 
